@@ -39,9 +39,13 @@ extension String {
 }
 
 
-/// Convenience wrappers that make the `range` parameter optional and type-safe.
+/**
+Convenience wrappers that make the `range` parameter optional and type-safe.
+*/
 extension NSRegularExpression {
-	/// Returns an array containing all the matches of the regular expression in the string.
+	/**
+	Returns an array containing all the matches of the regular expression in the string.
+	*/
 	func matches(
 		in string: String,
 		options: MatchingOptions = [],
@@ -54,7 +58,9 @@ extension NSRegularExpression {
 		)
 	}
 
-	/// Returns the first match of the regular expression within the given range of the string.
+	/**
+	Returns the first match of the regular expression within the given range of the string.
+	*/
 	func firstMatch(
 		in string: String,
 		options: MatchingOptions = [],
